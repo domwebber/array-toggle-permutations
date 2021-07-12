@@ -122,21 +122,5 @@ final class ArrayTogglePermutationsTest extends TestCase
 
         $this->assertEquals($expectation, $output);
         $this->assertEquals(count($expectation), $iterator->getPermutations());
-
-        $it = new ArrayTogglePermutations([
-            0
-        ]);
-
-        foreach ($it as $perm) {
-            if ($it->key() == 0) {
-                continue;
-            }
-
-            if ($it->key() === ($it->getPermutations() - 1)) {
-                continue;
-            }
-
-            var_dump($perm);
-        }
     }
 }
