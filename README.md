@@ -5,6 +5,8 @@
 [![Total Downloads](http://poser.pugx.org/domwebber/array-toggle-permutations/downloads)](https://packagist.org/packages/domwebber/array-toggle-permutations)
 [![License](http://poser.pugx.org/domwebber/array-toggle-permutations/license)](https://packagist.org/packages/domwebber/array-toggle-permutations)
 
+A helpful PHP utility that easily loops through every possible combination of array items. This package is intended for use in testing environments but is unit tested to the degree that it is also safe for use in a production environment too (within reason). This package can also handle associative arrays.
+
 ## Installation
 
 Use the [composer](https://getcomposer.org) package manager to install the Array Permutations Iterator.
