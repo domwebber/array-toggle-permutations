@@ -1,1 +1,11 @@
-/vendor/
+# Node artifact files
+node_modules/
+
+# Log files
+*.log
+
+# Composer library files
+vendor/
+
+# PHPUnit Cache
+.phpunit.cache/

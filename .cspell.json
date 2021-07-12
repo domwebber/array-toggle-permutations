@@ -1,0 +1,20 @@
+{
+    "version": "0.1",
+    "language": "en-GB",
+    "dictionaries": [
+        "php",
+        "softwareTerms",
+        "python",
+        "filetypes"
+    ],
+    "allowCompoundWords": true,
+    "ignorePaths": [
+        "vendor/*",
+        "composer.json",
+        "composer.lock"
+    ],
+    "ignoreRegExpList": [
+        "email",
+        "^\\s+\\*\\s+@(author|copyright)\\s+.*$"
+    ]
+}

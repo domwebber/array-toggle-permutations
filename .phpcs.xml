@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="Array Permutations Standard" namespace="Dw\Utils\Standard">
+    <description>Coding Standard for the Array Permutations utility</description>
+    <file>./src</file>
+    <file>./tests</file>
+    <arg name="colors"/>
+    <rule ref="PSR12"/>
+</ruleset>

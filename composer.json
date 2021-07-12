@@ -11,12 +11,12 @@
     "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
-            "Domwebber\\ArrayTogglePermutations\\": "src/"
+            "Dw\\Utils\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Domwebber\\ArrayTogglePermutations\\Tests\\": "tests/"
+            "Dw\\Utils\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -25,5 +25,19 @@
             "email": "dom.webber@hotmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "markrogoyski/math-php": "^2.2"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": [
+            "phpunit --testdox",
+            "phpstan analyse -c phpstan.neon",
+            "psalm --show-info=true",
+            "phpcs"
+        ]
+    }
 }
