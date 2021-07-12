@@ -19,43 +19,23 @@ composer require domwebber/array-toggle-permutations
 
 This library can be used to toggle the options of a numerically-indexed array or an associative array. In the case where an associative array is used, the array keys will be maintained. In either case, the array items will stay in the original order.
 
+**Basic usage:**
+
 ```php
 use Dw\Utils\ArrayTogglePermutations;
 
 $iterator = new ArrayTogglePermutations(
     [0,1,2]
 );
-```
 
-**Basic usage:**
-
-```php
 // $iterator = new ArrayTogglePermutations(...);
 foreach ($iterator as $permutation) {
-    // Do something with the combination...
+    // Do something with the combination... For example:
     var_dump($permutation);
 }
 ```
 
-**Skip first/last:**
-
-```php
-// $iterator = new ArrayTogglePermutations(...);
-foreach ($iterator as $permutation) {
-    // Skip first (empty)
-    if ($it->key() == 0) {
-        continue;
-    }
-
-    // Skip last (full)
-    if ($it->key() === ($it->getPermutations() - 1)) {
-        continue;
-    }
-
-    // Do something with the combination...
-    var_dump($permutation);
-}
-```
+See [examples](./examples/).
 
 ## Contributing
 

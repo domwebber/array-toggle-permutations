@@ -3,6 +3,7 @@
     <description>Coding Standard for the Array Permutations utility</description>
     <file>./src</file>
     <file>./tests</file>
+    <file>./examples</file>
     <arg name="colors"/>
     <rule ref="PSR12"/>
 </ruleset>
