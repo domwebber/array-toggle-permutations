@@ -17,6 +17,8 @@ composer require domwebber/array-toggle-permutations
 
 ## Usage
 
+This library can be used to toggle the options of a numerically-indexed array or an associative array. In the case where an associative array is used, the array keys will be maintained. In either case, the array items will stay in the original order.
+
 ```php
 use Dw\Utils\ArrayTogglePermutations;
 
